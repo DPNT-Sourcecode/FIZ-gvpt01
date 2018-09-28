@@ -32,5 +32,12 @@ public class FizzBuzzSolutionTest {
 		assertEquals(Integer.toString(7), fizzBuzzSolution.fizzBuzz(7));
 		assertEquals(Integer.toString(8), fizzBuzzSolution.fizzBuzz(8));
 		assertEquals(Integer.toString(11), fizzBuzzSolution.fizzBuzz(11));
+		assertEquals(Integer.toString(13), fizzBuzzSolution.fizzBuzz(13));
+		assertEquals(Integer.toString(14), fizzBuzzSolution.fizzBuzz(14));
+		assertEquals(Integer.toString(16), fizzBuzzSolution.fizzBuzz(16));
+		assertEquals(Integer.toString(17), fizzBuzzSolution.fizzBuzz(17));
+		assertEquals(Integer.toString(19), fizzBuzzSolution.fizzBuzz(19));
+		assertEquals(Integer.toString(22), fizzBuzzSolution.fizzBuzz(22));
+		assertEquals(Integer.toString(23), fizzBuzzSolution.fizzBuzz(23));
 	}
 }
