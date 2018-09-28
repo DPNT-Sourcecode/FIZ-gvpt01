@@ -29,8 +29,13 @@ private String doFizzBuzzDelux(Integer number){
 	
 	return response;
 }
-private boolean contains3MatchingDigits(String fullNumber, String firstDigitInNumber){
+private boolean contains3MatchingDigits(String fullNumber[], String firstDigitInNumber){
 	boolean response = false;
+	CharSequence str = ;
+	StringUtils.startsWith(str , prefix)
+	firstDigitInNumber.substring(0,1)
+	
+	if()
 	
 	return response;
 }
