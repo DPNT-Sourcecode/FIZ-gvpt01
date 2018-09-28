@@ -30,22 +30,23 @@ public class FizzBuzzSolution {
 	}
 
 	private String doFizzBuzzLogicWith3or5NumberCheck(Integer number) {
-		String numberToCheck = String.valueOf(number);
+		boolean conditionNotMet = true;
+		String numberToCheckAsString = String.valueOf(number);
 		String number3 = String.valueOf(3);
 		String number5 = String.valueOf(5);
 
-		if (number % 3 == 0) {
-			if (number % 3 == 0 || numberToCheck.toString().contains(number3)) {
+	//	if (number % 3 == 0) {
+			if (number % 3 == 0 || numberToCheckAsString.toString().contains(number3)) {
 				// if divisible by 3 or contains a 3
 				return FIZZ;
-			} else {
+			}if(number % 5 == 0 || numberToCheckAsString.toString().contains(number5)){
 				// if divisible 3 only return FIZZ
 				return FIZZ;
 			}
-		} else if (number % 5 == 0 || numberToCheck.toString().contains(number5)) {
+	//	} else if (number % 5 == 0 || numberToCheck.toString().contains(number5)) {
 			// if divisible 5 only return BUZZ
-			return BUZZ;
-		}
+	//		return BUZZ;
+	//	}
 		return String.valueOf(number);
 	}
 }
