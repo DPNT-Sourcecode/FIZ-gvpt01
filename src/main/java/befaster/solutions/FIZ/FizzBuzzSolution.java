@@ -36,22 +36,22 @@ public class FizzBuzzSolution {
 		String number3 = String.valueOf(3);
 		String number5 = String.valueOf(5);
 		
-		if(number % 15 == 0 && numberToCheckAsString.contains(number3)){
-			response = FIZZ;
-			conditionsNotMet = true;
-		}
-		if(number % 15 == 0 && numberToCheckAsString.contains(number5) && !conditionsNotMet){
-			response = BUZZ;
-			conditionsNotMet = true;
-		}
+//		if(number % 15 == 0 && numberToCheckAsString.contains(number3)){
+//			response = FIZZ;
+//			conditionsNotMet = true;
+//		}
+//		if(number % 15 == 0 && numberToCheckAsString.contains(number5) && !conditionsNotMet){
+//			response = BUZZ;
+//			conditionsNotMet = true;
+//		}
 		
 		//if number divisible by 3 or contains 3 return FIZZ
-		if (number % 3 == 0 || numberToCheckAsString.contains(number3) && !conditionsNotMet) {
+		if (number % 3 == 0 || numberToCheckAsString.contains(number3)) {
 			response = FIZZ;
 			conditionsNotMet = true;
 		}
 		//if number divisible by 5 or contains 5 return BUZZ
-		if (number % 5 == 0 || numberToCheckAsString.contains(number5) && !conditionsNotMet) {
+		if (number % 5 == 0 || numberToCheckAsString.contains(number5)) {
 			response = response + BUZZ;
 			conditionsNotMet = true;
 		}
