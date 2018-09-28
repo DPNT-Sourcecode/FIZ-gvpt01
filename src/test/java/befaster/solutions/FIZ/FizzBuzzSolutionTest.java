@@ -101,5 +101,6 @@ public class FizzBuzzSolutionTest {
 		assertEquals(fizzBuzzSolution.FIZZ+fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(777));
 		assertEquals(fizzBuzzSolution.FIZZ+fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(888));
 		assertEquals(fizzBuzzSolution.FIZZ+fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(999));
+		assertEquals(fizzBuzzSolution.FIZZ+fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(1111));
 	}
 }
