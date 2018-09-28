@@ -30,6 +30,8 @@ public class FizzBuzzSolution {
 	}
 
 	private String doFizzBuzzLogicWith3or5NumberCheck(Integer number) {
+		boolean isDivisibleBy3 = (number % 3 == 0);
+		boolean isDivisibleBy5 = (number % 5 == 0);
 		boolean conditionsMet = false;
 		String response = "";
 		String numberToCheckAsString = String.valueOf(number);
@@ -37,13 +39,18 @@ public class FizzBuzzSolution {
 		String number5 = String.valueOf(5);
 
 		// if number divisible by 3 or contains 3 return FIZZ
-		if (number % 3 == 0 || numberToCheckAsString.contains(number3)) {
+		if (isDivisibleBy3 || numberToCheckAsString.contains(number3)) {
 			response = FIZZ;
 			conditionsMet = true;
 		}
 		// if number divisible by 5 or contains 5 return BUZZ
-		if (number % 5 == 0 || numberToCheckAsString.contains(number5)) {
-				response = response +" "+ BUZZ;
+		if (isDivisibleBy5 || numberToCheckAsString.contains(number5)) {
+			if (conditionsMet) {
+				response = response + " " + BUZZ;
+			} else {
+				response = response + BUZZ;
+			}
+
 			conditionsMet = true;
 		}
 		// Conditions not meet so return number as string

@@ -58,10 +58,10 @@ public class FizzBuzzSolutionTest {
 	@Test
 	public void testFizzBuzzWith5NumberCheckContaining5(){
 		assertEquals(fizzBuzzSolution.BUZZ,fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(5));
-		assertEquals(fizzBuzzSolution.FIZZ + fizzBuzzSolution.BUZZ,fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(15));
+		assertEquals(fizzBuzzSolution.FIZZBUZZ,fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(15));
 		assertEquals(fizzBuzzSolution.BUZZ,fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(25));
 		assertEquals(fizzBuzzSolution.FIZZBUZZ,fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(35));
-		assertEquals(fizzBuzzSolution.FIZZ + fizzBuzzSolution.BUZZ,fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(30));
+		assertEquals(fizzBuzzSolution.FIZZBUZZ,fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(30));
 		assertEquals(fizzBuzzSolution.FIZZ ,fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(33));
 		assertEquals(fizzBuzzSolution.BUZZ,fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(50));
 	}
@@ -83,7 +83,8 @@ public class FizzBuzzSolutionTest {
 		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(333));
 		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(13));
 		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(23));
-		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(300));
+		assertEquals(fizzBuzzSolution.FIZZBUZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(300));
+		assertEquals(fizzBuzzSolution.FIZZBUZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(335));
 		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(311));
 		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(113));
 	}
