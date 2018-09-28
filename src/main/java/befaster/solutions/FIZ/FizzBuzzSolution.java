@@ -1,5 +1,6 @@
 package befaster.solutions.FIZ;
 
+import org.apache.commons.lang3.*;
 public class FizzBuzzSolution {
 	public final String FIZZ = "fizz";
 	public final String BUZZ = "buzz";
@@ -12,11 +13,13 @@ public class FizzBuzzSolution {
 	}
 
 private String doFizzBuzzDelux(Integer number){
+	String numberToCheckAsString = number.toString();
 	String response = "";
 	String standardLogicResponse = doFizzBuzzLogicWith3or5NumberCheck(number);
 	boolean allDigitsTheSame = false;
 	if(number<10&& allDigitsTheSame){
 		response = standardLogicResponse+DELUX;
+		StringUtils.countMatches(str, sub);
 	}
 	
 	
