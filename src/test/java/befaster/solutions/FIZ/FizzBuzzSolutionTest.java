@@ -76,4 +76,15 @@ public class FizzBuzzSolutionTest {
 		assertEquals(Integer.toString(14), fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(14));
 		assertEquals(Integer.toString(16), fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(16));
 	}
+	@Test
+	public void testForAllValidFIZZOnlnyResponses(){
+		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(3));
+		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(33));
+		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(333));
+		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(13));
+		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(23));
+		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(300));
+		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(311));
+		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(113));
+	}
 }
