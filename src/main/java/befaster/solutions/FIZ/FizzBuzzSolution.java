@@ -4,6 +4,7 @@ public class FizzBuzzSolution {
 	public final String FIZZ = "fizz";
 	public final String BUZZ = "buzz";
 	public final String FIZZBUZZ = FIZZ + " " + BUZZ;
+	public final String DELUX = " deluxe";
 
 	public String fizzBuzz(Integer number) {
 		//return doFizzBuzzLogic(number);
@@ -12,7 +13,13 @@ public class FizzBuzzSolution {
 
 private String doFizzBuzzDelux(Integer number){
 	String response = "";
-	doFizzBuzzLogicWith3or5NumberCheck(number);
+	String standardLogicResponse = doFizzBuzzLogicWith3or5NumberCheck(number);
+	boolean allDigitsTheSame = false;
+	if(number<10&& allDigitsTheSame){
+		response = standardLogicResponse+DELUX;
+	}
+	
+	
 	return response;
 }
 
