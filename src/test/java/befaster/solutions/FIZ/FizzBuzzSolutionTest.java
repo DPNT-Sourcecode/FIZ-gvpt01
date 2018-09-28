@@ -19,7 +19,7 @@ public class FizzBuzzSolutionTest {
 
 	@Test
 	public void testSolutionForFizzBuzz() {
-		assertEquals(fizzBuzzSolution.FIZZ + fizzBuzzSolution.BUZZ, fizzBuzzSolution.fizzBuzz(15));
+		assertEquals(fizzBuzzSolution.FIZZBUZZ, fizzBuzzSolution.fizzBuzz(15));
 	}
 
 	@Test
