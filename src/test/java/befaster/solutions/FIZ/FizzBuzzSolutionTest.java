@@ -57,10 +57,14 @@ public class FizzBuzzSolutionTest {
 	}
 	@Test
 	public void testFizzBuzzWith5NumberCheckContaining5(){
-	//	assertEquals(fizzBuzzSolution.BUZZ,fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(5));
+		assertEquals(fizzBuzzSolution.BUZZ,fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(5));
 		assertEquals(fizzBuzzSolution.FIZZ + fizzBuzzSolution.BUZZ,fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(15));
-	//	assertEquals(fizzBuzzSolution.BUZZ,fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(25));
+		assertEquals(fizzBuzzSolution.BUZZ,fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(25));
 		assertEquals(fizzBuzzSolution.FIZZ + fizzBuzzSolution.BUZZ,fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(35));
-	//	assertEquals(fizzBuzzSolution.FIZZ + fizzBuzzSolution.BUZZ,fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(30));
+		assertEquals(fizzBuzzSolution.FIZZ + fizzBuzzSolution.BUZZ,fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(30));
+	}
+	@Test
+	public void testNmubersNotContaining3Or5ReturnString(){
+		assertEquals(Integer.toString(1), fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(1));
 	}
 }
