@@ -29,6 +29,11 @@ private String doFizzBuzzDelux(Integer number){
 	
 	return response;
 }
+private boolean contains3MatchingDigits(String fullNumber, String firstDigitInNumber){
+	boolean response = false;
+	
+	return response;
+}
 
 	private String doFizzBuzzLogic(Integer number) {
 		if (number % 3 == 0) {
