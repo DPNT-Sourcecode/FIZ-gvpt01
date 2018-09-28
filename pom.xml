@@ -21,7 +21,7 @@
         <repository>
             <id>bintray-julianghionoiu-maven</id>
             <name>bintray</name>
-            <url>https://jcenter.bintray.com/</url>
+            <url>http://dl.bintray.com/julianghionoiu/maven</url>
         </repository>
     </repositories>
 

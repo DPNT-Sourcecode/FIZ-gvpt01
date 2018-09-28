@@ -15,7 +15,7 @@ public class SumSolutionTest {
         sum = new SumSolution();
     }
 
- //   @Test
+  //  @Test
     public void compute_sum() {
         assertThat(sum.compute(1, 1), equalTo(2));
     }
