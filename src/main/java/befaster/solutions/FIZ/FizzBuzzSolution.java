@@ -16,9 +16,15 @@ public class FizzBuzzSolution {
 
 		String firstDigitInNumber = numberToCheckAsString.substring(0, 1);
 		boolean allDigitsTheSame = containsAllMatchingDigits(numberToCheckAsString, firstDigitInNumber);
-
+		String delux = DELUX;
+		if(number % 2 == 0){
+			delux = DELUX;
+		}else{
+			delux = "fake "+DELUX;
+		}
+		
 		if (number > 10 && allDigitsTheSame) {
-			String delux = DELUX;//doFizzBuzzDelux(number);
+			//doFizzBuzzDelux(number);
 			if(response.equalsIgnoreCase(BUZZ)||response.equalsIgnoreCase(FIZZ)||response.equalsIgnoreCase(FIZZBUZZ)){
 				response = response +" "+ delux;
 			}else{
