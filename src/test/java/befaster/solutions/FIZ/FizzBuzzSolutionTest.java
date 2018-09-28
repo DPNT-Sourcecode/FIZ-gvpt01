@@ -28,7 +28,7 @@ public class FizzBuzzSolutionTest {
 	public void testSolutionForNOTFizzBuzz() {
 		// Numbers 1,2,4,7,8,11 are not divisible by 3 or 5.. This test that the
 		// number passed in is returned as a String
-		
+
 		assertEquals(Integer.toString(1), fizzBuzzSolution.fizzBuzz(1));
 		assertEquals(Integer.toString(2), fizzBuzzSolution.fizzBuzz(2));
 		assertEquals(Integer.toString(4), fizzBuzzSolution.fizzBuzz(4));
@@ -42,6 +42,6 @@ public class FizzBuzzSolutionTest {
 		assertEquals(Integer.toString(19), fizzBuzzSolution.fizzBuzz(19));
 		assertEquals(Integer.toString(22), fizzBuzzSolution.fizzBuzz(22));
 		assertEquals(Integer.toString(23), fizzBuzzSolution.fizzBuzz(23));
-		
+
 	}
 }
