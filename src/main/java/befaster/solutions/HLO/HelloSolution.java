@@ -3,8 +3,8 @@ package befaster.solutions.HLO;
 import befaster.runner.SolutionNotImplementedException;
 
 public class HelloSolution {
-	public String helloText = "Hello";
+	public String helloWorldText = "Hello World";
     public String hello(String friendName) {
-        return helloText+friendName;
+        return helloWorldText;
     }
 }

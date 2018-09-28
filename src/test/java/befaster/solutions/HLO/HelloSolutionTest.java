@@ -9,7 +9,7 @@ public class HelloSolutionTest {
 	private final String nameToTestFor = "Danny";
 	@Test
 	public void testHello() {
-		assertEquals(helloSolution.hello(nameToTestFor), helloSolution.helloText+nameToTestFor);
+		assertEquals(helloSolution.hello(helloSolution.helloWorldText), helloSolution.helloWorldText);
 	}
 
 }
