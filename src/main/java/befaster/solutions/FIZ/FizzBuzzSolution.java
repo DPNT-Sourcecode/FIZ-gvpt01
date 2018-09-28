@@ -14,6 +14,7 @@ public class FizzBuzzSolution {
 
 private String doFizzBuzzDelux(Integer number){
 	String numberToCheckAsString = number.toString();
+	
 	String response = "";
 	String standardLogicResponse = doFizzBuzzLogicWith3or5NumberCheck(number);
 	boolean allDigitsTheSame = false;
