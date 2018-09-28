@@ -1,6 +1,7 @@
 package befaster.solutions.FIZ;
 
 import org.apache.commons.lang3.*;
+
 public class FizzBuzzSolution {
 	public final String FIZZ = "fizz";
 	public final String BUZZ = "buzz";
@@ -8,38 +9,45 @@ public class FizzBuzzSolution {
 	public final String DELUX = " deluxe";
 
 	public String fizzBuzz(Integer number) {
-		//return doFizzBuzzLogic(number);
-		return doFizzBuzzLogicWith3or5NumberCheck(number);
+		String response = doFizzBuzzLogicWith3or5NumberCheck(number);
+		
+		
+		String numberToCheckAsString = number.toString();
+
+		String firstDigitInNumber = numberToCheckAsString.substring(0, 1);
+		boolean allDigitsTheSame = contains3MatchingDigits(numberToCheckAsString, firstDigitInNumber);
+
+		if (number > 10 && allDigitsTheSame) {
+			String delux = doFizzBuzzDelux(number);
+			response = response + delux;
+		}
+		return response;
 	}
 
-private String doFizzBuzzDelux(Integer number){
-	char[] numberToCheckAsString = number.toString().toCharArray();
-	
-	String firstDigitInNumber = String.valueOf(numberToCheckAsString[0]);
-	
-	contains3MatchingDigits(number.toString().toCharArray(), firstDigitInNumber);
-	String response = "";
-	String standardLogicResponse = doFizzBuzzLogicWith3or5NumberCheck(number);
-	boolean allDigitsTheSame = false;
-	if(number<10&& allDigitsTheSame){
-		response = standardLogicResponse+DELUX;
-		
-		
+	private String doFizzBuzzDelux(Integer number) {
+		String response = "";
+
+		String numberToCheckAsString = number.toString();
+
+		String firstDigitInNumber = numberToCheckAsString.substring(0, 1);
+		boolean allDigitsTheSame = contains3MatchingDigits(numberToCheckAsString, firstDigitInNumber);
+
+		if (number > 10 && allDigitsTheSame) {
+			response =DELUX;
+		} else {
+			response = "";
+		}
+
+		return response;
 	}
-	
-	
-	return response;
-}
-private boolean contains3MatchingDigits(char fullNumber[], String firstDigitInNumber){
-	boolean response = false;
-	CharSequence str = ;
-	StringUtils.startsWith(str , prefix)
-	firstDigitInNumber.substring(0,1)
-	
-	if()
-	
-	return response;
-}
+
+	private boolean contains3MatchingDigits(String fullNumber, String firstDigitInNumber) {
+		boolean response = false;
+		if (StringUtils.countMatches(fullNumber, firstDigitInNumber) == fullNumber.length()) {
+			response = true;
+		}
+		return response;
+	}
 
 	private String doFizzBuzzLogic(Integer number) {
 		if (number % 3 == 0) {
