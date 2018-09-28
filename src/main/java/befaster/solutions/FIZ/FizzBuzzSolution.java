@@ -37,9 +37,6 @@ public class FizzBuzzSolution {
 		String number5 = String.valueOf(5);
 		//if number divisible by 3 or contains 3 return FIZZ
 		if (number % 3 == 0 || numberToCheckAsString.toString().contains(number3)) {
-		//	if(number % 15 == 0){
-				
-		//	}
 			response = FIZZ;
 			conditionsNotMet = true;
 		}
