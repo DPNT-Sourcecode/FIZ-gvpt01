@@ -78,16 +78,16 @@ public class FizzBuzzSolutionTest {
 	}
 	@Test
 	public void testForAllValidFIZZOnlyResponses(){
-//		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(3));
-//		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(33));
-//		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(333));
-		assertEquals(fizzBuzzSolution.FIZZBUZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(13));
-//		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(43));
-//		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(163));
-//		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(23));
-//		assertEquals(fizzBuzzSolution.FIZZBUZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(300));
-//		assertEquals(fizzBuzzSolution.FIZZBUZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(335));
-//		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(311));
-//		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(113));
+		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(3));
+		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(33));
+		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(333));
+		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(13));
+		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(43));
+		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(163));
+		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(23));
+		assertEquals(fizzBuzzSolution.FIZZBUZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(300));
+		assertEquals(fizzBuzzSolution.FIZZBUZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(335));
+    	assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(311));
+		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.doFizzBuzzWith3or5NumberCheck(113));
 	}
 }
