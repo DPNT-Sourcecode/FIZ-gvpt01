@@ -19,4 +19,10 @@ public class SumSolutionTest {
     public void compute_sum() {
         assertThat(sum.compute(1, 1), equalTo(2));
     }
+    @Test
+    public void testAllComputeBetweenZeroAndOneHundred(){
+    	for(int i=0;i<100; i++){
+    		assertThat(sum.compute(1, i), equalTo(1 + i));
+    	}
+    }
 }
