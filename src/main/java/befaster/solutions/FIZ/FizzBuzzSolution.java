@@ -43,7 +43,11 @@ public class FizzBuzzSolution {
 		}
 		// if number divisible by 5 or contains 5 return BUZZ
 		if (number % 5 == 0 || numberToCheckAsString.contains(number5)) {
-			response = response + BUZZ;
+			if(conditionsNotMet){
+				response = response +" "+ BUZZ;
+			}else{
+				response = response + BUZZ;
+			}
 			conditionsNotMet = true;
 		}
 		// Conditions not meet so return number as string
