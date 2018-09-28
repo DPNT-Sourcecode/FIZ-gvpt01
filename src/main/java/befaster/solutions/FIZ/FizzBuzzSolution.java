@@ -9,9 +9,9 @@ public class FizzBuzzSolution {
 		return doFizzBuzzLogicWith3or5NumberCheck(number);
 	}
 
-	public String doFizzBuzzWith3or5NumberCheck(Integer number) {
-		return doFizzBuzzLogicWith3or5NumberCheck(number);
-	}
+//	public String doFizzBuzzWith3or5NumberCheck(Integer number) {
+//		return doFizzBuzzLogicWith3or5NumberCheck(number);
+//	}
 
 	private String doFizzBuzzLogic(Integer number) {
 		if (number % 3 == 0) {
