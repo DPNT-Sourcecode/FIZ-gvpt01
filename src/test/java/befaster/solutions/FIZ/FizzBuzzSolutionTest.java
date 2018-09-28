@@ -34,13 +34,13 @@ public class FizzBuzzSolutionTest {
 		assertEquals(Integer.toString(4), fizzBuzzSolution.fizzBuzz(4));
 		assertEquals(Integer.toString(7), fizzBuzzSolution.fizzBuzz(7));
 		assertEquals(Integer.toString(8), fizzBuzzSolution.fizzBuzz(8));
-		assertEquals(Integer.toString(11) + fizzBuzzSolution.DELUX, fizzBuzzSolution.fizzBuzz(11));
+		assertEquals(fizzBuzzSolution.DELUX, fizzBuzzSolution.fizzBuzz(11));
 		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.fizzBuzz(13));
 		assertEquals(Integer.toString(14), fizzBuzzSolution.fizzBuzz(14));
 		assertEquals(Integer.toString(16), fizzBuzzSolution.fizzBuzz(16));
 		assertEquals(Integer.toString(17), fizzBuzzSolution.fizzBuzz(17));
 		assertEquals(Integer.toString(19), fizzBuzzSolution.fizzBuzz(19));
-		assertEquals(Integer.toString(22) + fizzBuzzSolution.DELUX, fizzBuzzSolution.fizzBuzz(22));
+		assertEquals(fizzBuzzSolution.DELUX, fizzBuzzSolution.fizzBuzz(22));
 		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.fizzBuzz(23));
 		assertEquals(Integer.toString(101), fizzBuzzSolution.fizzBuzz(101));
 		assertEquals(fizzBuzzSolution.FIZZBUZZ, fizzBuzzSolution.fizzBuzz(532));
@@ -61,7 +61,7 @@ public class FizzBuzzSolutionTest {
 		assertEquals(fizzBuzzSolution.BUZZ,fizzBuzzSolution.fizzBuzz(25));
 		assertEquals(fizzBuzzSolution.FIZZBUZZ,fizzBuzzSolution.fizzBuzz(35));
 		assertEquals(fizzBuzzSolution.FIZZBUZZ,fizzBuzzSolution.fizzBuzz(30));
-		assertEquals(fizzBuzzSolution.FIZZ + fizzBuzzSolution.DELUX ,fizzBuzzSolution.fizzBuzz(33));
+		assertEquals(fizzBuzzSolution.DELUX ,fizzBuzzSolution.fizzBuzz(33));
 		assertEquals(fizzBuzzSolution.BUZZ,fizzBuzzSolution.fizzBuzz(50));
 	}
 	@Test
@@ -71,14 +71,14 @@ public class FizzBuzzSolutionTest {
 		assertEquals(Integer.toString(4), fizzBuzzSolution.fizzBuzz(4));
 		assertEquals(Integer.toString(7), fizzBuzzSolution.fizzBuzz(7));
 		assertEquals(Integer.toString(8), fizzBuzzSolution.fizzBuzz(8));
-		assertEquals(Integer.toString(11)+fizzBuzzSolution.DELUX, fizzBuzzSolution.fizzBuzz(11));
+		assertEquals(Integer.toString(19), fizzBuzzSolution.fizzBuzz(19));
 		assertEquals(Integer.toString(14), fizzBuzzSolution.fizzBuzz(14));
 		assertEquals(Integer.toString(16), fizzBuzzSolution.fizzBuzz(16));
 	}
 	@Test
 	public void testForAllValidFIZZOnlyResponses(){
 		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.fizzBuzz(3));
-		assertEquals(fizzBuzzSolution.FIZZ + fizzBuzzSolution.DELUX, fizzBuzzSolution.fizzBuzz(33));
+		assertEquals(fizzBuzzSolution.DELUX, fizzBuzzSolution.fizzBuzz(33));
 		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.fizzBuzz(13));
 		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.fizzBuzz(43));
 		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.fizzBuzz(163));
@@ -90,9 +90,9 @@ public class FizzBuzzSolutionTest {
 	}
 	@Test
 	public void testDelux(){
-//		assertEquals(fizzBuzzSolution.FIZZBUZZ+fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(555));
-//		assertEquals(fizzBuzzSolution.FIZZ+fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(111));
-//		assertEquals(fizzBuzzSolution.FIZZ+fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(222));
+		assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(11));
+		assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(22));
+		assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(1111));
 ////		
 //		assertEquals(fizzBuzzSolution.FIZZ+fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(333));
 ////		
@@ -101,6 +101,15 @@ public class FizzBuzzSolutionTest {
 //		assertEquals(fizzBuzzSolution.FIZZ+fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(777));
 //		assertEquals(fizzBuzzSolution.FIZZ+fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(888));
 //		assertEquals(fizzBuzzSolution.FIZZ+fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(999));
-		assertEquals(fizzBuzzSolution.FIZZ+fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(1111));
+		assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(1111));
+	}
+	@Test
+	public void testBrokenServerTests(){
+		assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(1111));
+		assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(111));
+		assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(11));
+		assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(22));
+		assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(222));
+		assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(2222));
 	}
 }

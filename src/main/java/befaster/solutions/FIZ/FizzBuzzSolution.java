@@ -6,7 +6,7 @@ public class FizzBuzzSolution {
 	public final String FIZZ = "fizz";
 	public final String BUZZ = "buzz";
 	public final String FIZZBUZZ = FIZZ + " " + BUZZ;
-	public final String DELUX = " deluxe";
+	public final String DELUX = "deluxe";
 
 	public String fizzBuzz(Integer number) {
 		String response = doFizzBuzzLogicWith3or5NumberCheck(number);
@@ -15,11 +15,13 @@ public class FizzBuzzSolution {
 		String numberToCheckAsString = number.toString();
 
 		String firstDigitInNumber = numberToCheckAsString.substring(0, 1);
-		boolean allDigitsTheSame = contains3MatchingDigits(numberToCheckAsString, firstDigitInNumber);
+		boolean allDigitsTheSame = containsAllMatchingDigits(numberToCheckAsString, firstDigitInNumber);
 
 		if (number > 10 && allDigitsTheSame) {
-			String delux = doFizzBuzzDelux(number);
-			response = response + delux;
+			//String delux = "DELUX";//doFizzBuzzDelux(number);
+			//response = response + delux;
+			return DELUX;
+			
 		}
 		return response;
 	}
@@ -30,7 +32,7 @@ public class FizzBuzzSolution {
 		String numberToCheckAsString = number.toString();
 
 		String firstDigitInNumber = numberToCheckAsString.substring(0, 1);
-		boolean allDigitsTheSame = contains3MatchingDigits(numberToCheckAsString, firstDigitInNumber);
+		boolean allDigitsTheSame = containsAllMatchingDigits(numberToCheckAsString, firstDigitInNumber);
 
 		if (number > 10 && allDigitsTheSame) {
 			response =DELUX;
@@ -41,7 +43,7 @@ public class FizzBuzzSolution {
 		return response;
 	}
 
-	private boolean contains3MatchingDigits(String fullNumber, String firstDigitInNumber) {
+	private boolean containsAllMatchingDigits(String fullNumber, String firstDigitInNumber) {
 		boolean response = false;
 		if (StringUtils.countMatches(fullNumber, firstDigitInNumber) == fullNumber.length()) {
 			response = true;
