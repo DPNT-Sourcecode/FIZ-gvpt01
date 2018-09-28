@@ -14,5 +14,8 @@ public class FizzBuzzSolutionTest {
 	public void testSolutionForBuzz(){
 		assertEquals(fizzBuzzSolution.BUZZ,fizzBuzzSolution.fizzBuzz(5));
 	}
-
+	@Test
+	public void testSolutionForFizzBuzz(){
+		assertEquals(fizzBuzzSolution.FIZZ + fizzBuzzSolution.BUZZ ,fizzBuzzSolution.fizzBuzz(15));
+	}
 }
