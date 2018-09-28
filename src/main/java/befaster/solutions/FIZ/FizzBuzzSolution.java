@@ -13,15 +13,16 @@ public class FizzBuzzSolution {
 	}
 
 private String doFizzBuzzDelux(Integer number){
-	String numberToCheckAsString = number.toString();
-	String firstDigitInNumber = numberToCheckAsString.substring(0, 1);
+	char[] numberToCheckAsString = number.toString().toCharArray();
 	
+	String firstDigitInNumber = String.valueOf(numberToCheckAsString[0]);
+	
+	contains3MatchingDigits(number.toString().toCharArray(), firstDigitInNumber);
 	String response = "";
 	String standardLogicResponse = doFizzBuzzLogicWith3or5NumberCheck(number);
 	boolean allDigitsTheSame = false;
 	if(number<10&& allDigitsTheSame){
 		response = standardLogicResponse+DELUX;
-		StringUtils.countMatches(numberToCheckAsString, firstDigitInNumber);
 		
 		
 	}
@@ -29,7 +30,7 @@ private String doFizzBuzzDelux(Integer number){
 	
 	return response;
 }
-private boolean contains3MatchingDigits(String fullNumber[], String firstDigitInNumber){
+private boolean contains3MatchingDigits(char fullNumber[], String firstDigitInNumber){
 	boolean response = false;
 	CharSequence str = ;
 	StringUtils.startsWith(str , prefix)
