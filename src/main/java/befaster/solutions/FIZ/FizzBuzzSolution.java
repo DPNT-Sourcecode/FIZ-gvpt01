@@ -7,6 +7,7 @@ public class FizzBuzzSolution {
 	public final String BUZZ = "buzz";
 	public final String FIZZBUZZ = FIZZ + " " + BUZZ;
 	public final String DELUX = "deluxe";
+	public final String FAKE_DELUX = "fake "+DELUX;
 
 	public String fizzBuzz(Integer number) {
 		String response = doFizzBuzzLogicWith3or5NumberCheck(number);
@@ -16,19 +17,19 @@ public class FizzBuzzSolution {
 
 		String firstDigitInNumber = numberToCheckAsString.substring(0, 1);
 		boolean allDigitsTheSame = containsAllMatchingDigits(numberToCheckAsString, firstDigitInNumber);
-		String delux = DELUX;
+		String deluxResponse = DELUX;
 		if(number % 2 == 0){
-			delux = DELUX;
+			deluxResponse = DELUX;
 		}else{
-			delux = "fake "+DELUX;
+			deluxResponse = FAKE_DELUX;
 		}
 		
 		if (number > 10 && allDigitsTheSame) {
 			//doFizzBuzzDelux(number);
 			if(response.equalsIgnoreCase(BUZZ)||response.equalsIgnoreCase(FIZZ)||response.equalsIgnoreCase(FIZZBUZZ)){
-				response = response +" "+ delux;
+				response = response +" "+ deluxResponse;
 			}else{
-				response = delux;
+				response = deluxResponse;
 			}
 			return response;
 			
