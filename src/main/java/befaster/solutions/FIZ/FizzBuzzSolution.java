@@ -39,18 +39,18 @@ public class FizzBuzzSolution {
 			response = FIZZ;
 			conditionsNotMet = true;
 		}
-		if(number % 15 == 0 && numberToCheckAsString.toString().contains(number5)){
+		if(number % 15 == 0 && numberToCheckAsString.toString().contains(number5) && !conditionsNotMet){
 			response = BUZZ;
 			conditionsNotMet = true;
 		}
 		
 		//if number divisible by 3 or contains 3 return FIZZ
-		if (number % 3 == 0 || numberToCheckAsString.toString().contains(number3)) {
+		if (number % 3 == 0 || numberToCheckAsString.toString().contains(number3) && !conditionsNotMet) {
 			response = FIZZ;
 			conditionsNotMet = true;
 		}
 		//if number divisible by 5 or contains 5 return BUZZ
-		if (number % 5 == 0 || numberToCheckAsString.toString().contains(number5)) {
+		if (number % 5 == 0 || numberToCheckAsString.toString().contains(number5) && !conditionsNotMet) {
 			response = response + BUZZ;
 			conditionsNotMet = true;
 		}
