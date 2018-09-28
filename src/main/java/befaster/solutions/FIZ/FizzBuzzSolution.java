@@ -6,7 +6,7 @@ public class FizzBuzzSolution {
 	public final String FIZZBUZZ = FIZZ + " " + BUZZ;
 
 	public String fizzBuzz(Integer number) {
-		return doFizzBuzzLogicWith3or5NumberCheck(number);
+		return doFizzBuzzLogic(number);
 	}
 
 //	public String doFizzBuzzWith3or5NumberCheck(Integer number) {
