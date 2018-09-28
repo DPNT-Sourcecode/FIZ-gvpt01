@@ -61,7 +61,6 @@ public class FizzBuzzSolutionTest {
 		assertEquals(fizzBuzzSolution.BUZZ,fizzBuzzSolution.fizzBuzz(25));
 		assertEquals(fizzBuzzSolution.FIZZBUZZ,fizzBuzzSolution.fizzBuzz(35));
 		assertEquals(fizzBuzzSolution.FIZZBUZZ,fizzBuzzSolution.fizzBuzz(30));
-		assertEquals(fizzBuzzSolution.DELUX ,fizzBuzzSolution.fizzBuzz(33));
 		assertEquals(fizzBuzzSolution.BUZZ,fizzBuzzSolution.fizzBuzz(50));
 	}
 	@Test
@@ -78,7 +77,6 @@ public class FizzBuzzSolutionTest {
 	@Test
 	public void testForAllValidFIZZOnlyResponses(){
 		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.fizzBuzz(3));
-		assertEquals(fizzBuzzSolution.DELUX, fizzBuzzSolution.fizzBuzz(33));
 		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.fizzBuzz(13));
 		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.fizzBuzz(43));
 		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.fizzBuzz(163));
@@ -93,6 +91,9 @@ public class FizzBuzzSolutionTest {
 		assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(11));
 		assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(22));
 		assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(1111));
+		assertEquals(fizzBuzzSolution.FIZZ +" "+ fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(33));
+		assertEquals(fizzBuzzSolution.FIZZ +" "+ fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(222));
+		assertEquals(fizzBuzzSolution.FIZZ +" "+ fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(777));
 ////		
 //		assertEquals(fizzBuzzSolution.FIZZ+fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(333));
 ////		
@@ -105,11 +106,12 @@ public class FizzBuzzSolutionTest {
 	}
 	@Test
 	public void testBrokenServerTests(){
-		assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(1111));
-		assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(111));
-		assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(11));
-		assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(22));
-		assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(222));
-		assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(2222));
+		assertEquals(fizzBuzzSolution.FIZZ+" "+ fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(33));
+	//	assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(1111));
+	//	assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(111));
+	//	assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(11));
+	//	assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(22));
+		assertEquals(fizzBuzzSolution.FIZZ+" "+ fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(222));
+		assertEquals(fizzBuzzSolution.FIZZ+" "+ fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(777));
 	}
 }

@@ -18,9 +18,13 @@ public class FizzBuzzSolution {
 		boolean allDigitsTheSame = containsAllMatchingDigits(numberToCheckAsString, firstDigitInNumber);
 
 		if (number > 10 && allDigitsTheSame) {
-			//String delux = "DELUX";//doFizzBuzzDelux(number);
-			//response = response + delux;
-			return DELUX;
+			String delux = DELUX;//doFizzBuzzDelux(number);
+			if(response.equalsIgnoreCase(BUZZ)||response.equalsIgnoreCase(FIZZ)||response.equalsIgnoreCase(FIZZBUZZ)){
+				response = response +" "+ delux;
+			}else{
+				response = delux;
+			}
+			return response;
 			
 		}
 		return response;
