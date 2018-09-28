@@ -14,7 +14,7 @@ public class OneTest {
         one = new One();
     }
 
- //   @Test
+    @Test
     public void run() {
         assertThat(one.apply(), equalTo(1));
     }
