@@ -14,13 +14,16 @@ public class FizzBuzzSolution {
 
 private String doFizzBuzzDelux(Integer number){
 	String numberToCheckAsString = number.toString();
+	String firstDigitInNumber = numberToCheckAsString.substring(0, 1);
 	
 	String response = "";
 	String standardLogicResponse = doFizzBuzzLogicWith3or5NumberCheck(number);
 	boolean allDigitsTheSame = false;
 	if(number<10&& allDigitsTheSame){
 		response = standardLogicResponse+DELUX;
-		StringUtils.countMatches(str, sub);
+		StringUtils.countMatches(numberToCheckAsString, firstDigitInNumber);
+		
+		
 	}
 	
 	
