@@ -34,7 +34,7 @@ public class FizzBuzzSolutionTest {
 		assertEquals(Integer.toString(4), fizzBuzzSolution.fizzBuzz(4));
 		assertEquals(Integer.toString(7), fizzBuzzSolution.fizzBuzz(7));
 		assertEquals(Integer.toString(8), fizzBuzzSolution.fizzBuzz(8));
-		assertEquals(fizzBuzzSolution.DELUX, fizzBuzzSolution.fizzBuzz(11));
+		assertEquals(fizzBuzzSolution.FAKE_DELUX, fizzBuzzSolution.fizzBuzz(11));
 		assertEquals(fizzBuzzSolution.FIZZ, fizzBuzzSolution.fizzBuzz(13));
 		assertEquals(Integer.toString(14), fizzBuzzSolution.fizzBuzz(14));
 		assertEquals(Integer.toString(16), fizzBuzzSolution.fizzBuzz(16));
@@ -107,19 +107,19 @@ public class FizzBuzzSolutionTest {
 	public void testFakeDelux(){
 		assertEquals(fizzBuzzSolution.FAKE_DELUX,fizzBuzzSolution.fizzBuzz(11));
 		assertEquals(fizzBuzzSolution.FAKE_DELUX,fizzBuzzSolution.fizzBuzz(1111));
-		assertEquals(fizzBuzzSolution.FAKE_DELUX,fizzBuzzSolution.fizzBuzz(777));
+		assertEquals(fizzBuzzSolution.FIZZ +" "+fizzBuzzSolution.FAKE_DELUX,fizzBuzzSolution.fizzBuzz(777));
 		assertEquals(fizzBuzzSolution.FIZZ +" "+ fizzBuzzSolution.FAKE_DELUX,fizzBuzzSolution.fizzBuzz(33));
 		assertEquals(fizzBuzzSolution.FAKE_DELUX,fizzBuzzSolution.fizzBuzz(1111));
 	}
 	
 	@Test
 	public void testBrokenServerTests(){
-		assertEquals(fizzBuzzSolution.FIZZ+" "+ fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(33));
+		assertEquals(fizzBuzzSolution.FIZZ+" "+ fizzBuzzSolution.FAKE_DELUX,fizzBuzzSolution.fizzBuzz(33));
 	//	assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(1111));
 	//	assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(111));
 	//	assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(11));
 	//	assertEquals(fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(22));
 		assertEquals(fizzBuzzSolution.FIZZ+" "+ fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(222));
-		assertEquals(fizzBuzzSolution.FIZZ+" "+ fizzBuzzSolution.DELUX,fizzBuzzSolution.fizzBuzz(777));
+		assertEquals(fizzBuzzSolution.FIZZ+" "+ fizzBuzzSolution.FAKE_DELUX,fizzBuzzSolution.fizzBuzz(777));
 	}
 }
