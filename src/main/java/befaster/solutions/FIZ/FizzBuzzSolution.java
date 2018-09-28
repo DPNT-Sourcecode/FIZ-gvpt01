@@ -28,8 +28,13 @@ public class FizzBuzzSolution {
 		return String.valueOf(number);
 	}
 	private String doFizzBuzzLogicWith3or5NumberCheck(Integer number) {
+		String numberToCheck = String.valueOf(number);
+		String number3 = String.valueOf(3);
+		String number5 = String.valueOf(5);
+		
+		
 		if (number % 3 == 0) {
-			if (number % 15 == 0) {
+			if (number % 15 == 0 || numberToCheck.toString().contains(number3)) {
 				//if divisible by 3 and 5 return FIZZBUZZ
 				return FIZZBUZZ;
 			} else {
